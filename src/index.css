@@ -33,3 +33,29 @@ li{
 li:hover{
     color:#fbca1f;
 }
+.box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    border:3px solid #fff;
+    padding: 20px;
+}
+.html{
+    background: #ff5b24;
+    transform: translate(-50%, -50%) rotate(20deg) ;
+    z-index: 10;
+}
+.css{
+    background: #3b3bfd;
+    transform: translate(-50%, -50%) rotate(30deg) ;
+    z-index: 9;
+}
+.javascript{
+    background: #ffd727;
+    transform: translate(-50%, -50%) rotate(40deg) ;
+    z-index: 8;
+}
