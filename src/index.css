@@ -59,3 +59,10 @@ li:hover{
     transform: translate(-50%, -50%) rotate(40deg) ;
     z-index: 8;
 }
+h2{
+    font-size: 40px;
+    -webkit-text-stroke: 1px #000;
+}
+footer{
+    padding: 15px 0;
+}
