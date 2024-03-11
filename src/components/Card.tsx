@@ -8,8 +8,10 @@ interface Props{
 export default function Card({lang, data}: Props) {
   return (
     <section className={`box ${lang.toLocaleLowerCase()}`}>
-      <h2>{lang}</h2>
-      <article className="overflow-auto h-[85%] border-2 rounded-md">
+      <h2>{lang.replace('-',' / ')}</h2>
+      <article id={`${lang.toLocaleLowerCase()}`} 
+               className="opacity-0 overflow-auto h-[90%] border-2 rounded-md"
+      >
         {
           data.map(article=>(
             <a key={article.title} href={article.link} target="_black">

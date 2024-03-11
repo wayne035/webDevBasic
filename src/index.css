@@ -22,12 +22,12 @@
 }
 body{
     position: relative;
-    height: 600vh;
+    height: 800vh;
     width: 100%;
     background: #000;
 }
 li{
-    margin: 5px 10px; 
+    margin: 10px; 
     cursor: pointer;
 }
 li:hover{
@@ -37,39 +37,44 @@ li:hover{
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     overflow: hidden;
     border-radius: 10px;
     border:3px solid #fff;
     padding: 20px;
 }
-.html{
-    background: #ff5b24;
+.html-css{
+    background: linear-gradient( 90deg,#ff5b24 5%, #4063ff 95%);
     transform: translate(-50%, -50%) rotate(20deg) ;
     z-index: 10;
 }
-.css{
-    background: #4063ff;
+.javascript{
+    background: #f3cd23;
     transform: translate(-50%, -50%) rotate(30deg) ;
     z-index: 9;
 }
-.javascript{
-    background: #f3cd23;
+.python{
+    background: linear-gradient( 135deg,#155e89 30%, #efdd3a, #fbce06);
     transform: translate(-50%, -50%) rotate(40deg) ;
     z-index: 8;
+}
+.video{
+    background: #eba4f5;
+    transform: translate(-50%, -50%) rotate(50deg) ;
+    z-index: 7;
 }
 h2{
     font-size: 40px;
     -webkit-text-stroke: 1px #000;
-    margin-bottom: 20px;
 }
 h3{margin: 0 15px  0;}
 a{
     margin: 8px;
     display: flex;
-    font-size: 24px;
+    font-size: 18px;
 }
+@media (768px <= width){a{font-size: 24px;}}
 a:hover .type, a:hover h3{
     color: #000;
     cursor: pointer;
@@ -78,6 +83,17 @@ a:hover .type, a:hover h3{
 .type{
     padding: 0 8px;
     border-radius: 5px;
+}
+.hint{
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    width: 100%;
+    font-weight: 900;
+    text-align: center;
+    transform: translateY(-50%);
+    color: #fbca1f;
+    -webkit-text-stroke: 1px #000;
 }
 footer{
     padding: 15px 0;
