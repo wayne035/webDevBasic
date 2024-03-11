@@ -98,7 +98,7 @@ export default function App() {
       duration:2,
       top:'50%', left:'50%',
     },'-=1.1').to('.video',{
-      rotation:-30,
+      rotation:-40,
       width:250,
       height:250,
       top:'50%', left:'50%',
